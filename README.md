@@ -5,12 +5,13 @@ A variety of ComfyUI related stuff. You'll need different models and custom node
 When troubleshooting (working to fix issues) - such as with your local custom node installs, it's best to do _all_ of these steps until resolution.
 * Make sure you've installed the drivers for your graphics card
 * These workflows require ComfyUI to run, so you'll need to install that first. See https://youtu.be/2r3uM_b3zA8 for an install guide
+* These are just workflows - no custom nodes here, so no code to go wrong :) Scroll down to see the table of workflows and their descriptions.
 * Install **ComfyUI Manager** next - https://github.com/ltdrdata/ComfyUI-Manager
 * Need a model or checkpoint? See the resources section below!
 * By default, models are saved in subdirectories under ``ComfyUI/models``, though some custom nodes have their own models directory.
 * _Don't mix SDXL and SD1.5 models_ (unless stated, such as SDXL needing the SD 1.5 vision model) - chances are you'll get an error!
 * Don't try to use SDXL models in workflows not designed for SDXL - chances are they won't work!
-* These are just workflows - no custom nodes here, so no code to go wrong :) Scroll down to see the table of workflows and their descriptions.
+* Ensure your model files aren't corrupt - try a fresh download if a particular model gives errors
 * Some workflows are _large_. Zoom out to see more of the canvas.
 * __Be sure to keep ComfyUI updated regularly__ - including all custom nodes. Old versions may result in errors appearing. This is the most common issue, so update now!
 * Use **ComfyUI Manager** to install missing custom nodes by clicking "Install Missing Custom Nodes"
@@ -58,6 +59,7 @@ Artist Style Studies | SDXL Prompt output examples for inspiration | https://sdx
 
 # Workflows available
 In ComfyUI the image **IS** the workflow. Simply drag or load a workflow image into ComfyUI!
+Don't forget the "troubleshooting" section above if your local install is giving errors :)
 
 Workflow | Description | Version
 | --- | --- | --- |
@@ -89,10 +91,12 @@ Workflow | Description | Version
 <img src="SDXL_Turbo_Basic.png" width="256px">|SDXL Turbo - 1 step diffusion!|SDXL Turbo, SD2 Turbo
 <img src="ComfyMagicAnimate.png" width="256px">|A very basic attempt at a "Comfy MagicAnimate". Needs more work :)<br>Links:<br>Magic Animate - https://github.com/magic-research/magic-animate<br>Magic Animate (Windows) - https://github.com/sdbds/magic-animate-for-windows<br>DreamingTulpa - https://twitter.com/dreamingtulpa/status/1730876691755450572<br>CocktailPeanut - https://twitter.com/cocktailpeanut/status/1732052909720797524<br>Google Colab - https://github.com/camenduru/MagicAnimate-colab<br>Huggingface Space - https://huggingface.co/spaces/zcxu-eric/magicanimate<br>Vid2DensePose - https://github.com/Flode-Labs/vid2densepose<br><br>Model Downloads for the MagicAnimate Gradio App:<br>`mkdir -p magic-animate/pretrained_models`<br>`cd magic-animate/pretrained_models`<br>`git lfs clone https://huggingface.co/runwayml/stable-diffusion-v1-5 -b fp16`<br>`git lfs clone https://huggingface.co/stabilityai/sd-vae-ft-mse`<br>`git lfs clone https://huggingface.co/zcxu-eric/MagicAnimate`<br>**Video** - https://youtu.be/td27SyA9M80| SD 1.5
 <img src="BatchImageAnimate.png" width="256px">|Steerable Motion - Image Batch with AnimateDiff| SD 1.5
+<img src="Renoiser.png" width="256px">|Unsampler - Turn images into noise and back again, as modified by your prompts!| SD 1.5
 
 # Custom Node List
-The current custom node list is shown in the image below. This is a complete list. Not all nodes are used in workflows.<br>
-Install custom nodes using ComfyUI manager<br>
+* Screenshots of my installed custom nodes for reference. Not all nodes are used in workflows.<br>
+* Install custom nodes using ComfyUI manager<br>
+* See the Troubleshooting section if you have errors with your local ComfyUI install<br>
 <img src="ComfyUI_Custom_1.png" width="720px"><br>
 <img src="ComfyUI_Custom_2.png" width="720px"><br>
 <img src="ComfyUI_Custom_3.png" width="720px"><br>
