@@ -13,7 +13,7 @@ Text-to-Image models | Text-2-image models | https://huggingface.co/models?pipel
 SSD-1B | Text2-image model | https://huggingface.co/segmind/SSD-1B
 ControlNet Models | ControlNet Models | https://huggingface.co/lllyasviel/sd_control_collection/tree/main<br>https://huggingface.co/comfyanonymous/ControlNet-v1-1_fp16_safetensors/tree/main
 QR Code Monster Control Net | ControlNet Model | https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster
-IP Adpater | Github Repo | https://github.com/tencent-ailab/IP-Adapter
+IP Adapter | Github Repo | https://github.com/tencent-ailab/IP-Adapter
 IP Adapter models | Models | https://huggingface.co/h94/IP-Adapter
 T2I Adapter | Github Repo | https://github.com/TencentARC/T2I-Adapter
 Control LoRA | Control Models | https://huggingface.co/stabilityai/control-lora
@@ -84,9 +84,10 @@ When troubleshooting (working to fix issues) - such as with your local custom no
 * Sometimes custom nodes change functionality, so check for updates. Changes include:
   * Segement anything - mask output inverted & now returns multiple images
   * Dynamic Thresholding - output different
-  * The original IPAdapter is becoming deprecated
+  * The original IPAdapter ('IPAdapter-ComfyUI') is deprecated and has been moved to the legacy channel.
 * The Microsoft Windows portable version of ComfyUI apparently has issues with various custom nodes, whereas normal installs are OK. Unknown error? Try a normal install!
 * Need more help? See this [Playlist with loads of ComfyUI guides](https://www.youtube.com/playlist?list=PLjC8P1vEncQDahWnl_WKYsjF_tmIDXWEa)
+* Need even more help? Drop me a DM on https://www.patreon.com/NerdyRodent
 
 # Updating / Installing Custom Nodes
 * Use ComfyUI Manager to install and update custom nodes with ease!
